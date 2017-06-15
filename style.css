@@ -43,9 +43,12 @@ body {
 
 /* Contents
 ------------------------------------------------------------*/
-.flexible-images {
+.picture {
+  background-image: url("./header.jpg");
+  height: 500px;
   width: 100%;
-  height: 500px; }
+  background-size: cover;
+  background-position: center center; }
 
 section {
   padding: 60px 0; }
@@ -92,9 +95,12 @@ section {
     font-size: 1rem; }
 
 @media (max-width: 768px) {
-  .flexible-images {
+  .picture {
+    background-image: url("./header.jpg");
+    height: 250px;
     width: 100%;
-    height: 250px; }
+    background-size: cover;
+    background-position: center center; }
 
   #middle {
     background-color: #ffffff; }
