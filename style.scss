@@ -62,12 +62,14 @@ body{
 
 /* Contents
 ------------------------------------------------------------*/
+//header
+.flexible-images {
+  width: 100%;
+  height: 500px;
+}
+
 section {
   padding: 60px 0;
-  // .container {
-  //   width: 90%;
-  //   @extend .block-center;
-  // }
   h2 {
     @extend .abel;
     font-size: 3.2rem;
@@ -123,3 +125,20 @@ section {
     font-size: 1rem;
    }
 }  
+
+@media (max-width: 768px) {
+ .flexible-images {
+  width: 100%;
+  height: 250px;
+  }
+ #middle {
+  background-color: $middleColor;
+  .container {
+    width: 90%;
+    // @extend .block-center;
+    @include display-flex;
+    justify-content: space-between;
+    @include flex-direction(column); 
+  }
+ }
+}
